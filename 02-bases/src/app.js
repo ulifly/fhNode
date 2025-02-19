@@ -1,10 +1,10 @@
 
 
-const { getUserById } = require("./js-foundation/03-callbacks");
+const { getUserById } = require("./js-foundation/04-arrow");
 
 // console.log(emailTemplate);
 
-const id = 4;
+const id = 2;
 
 getUserById(id, (error, user) => {
     if(error ){
