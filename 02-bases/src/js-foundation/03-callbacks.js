@@ -13,9 +13,17 @@ const users = [
     },
 ];
 
-const getUserById = ( id ) => {
+const getUserById = ( id, callback ) => {
     const user = users.find( function(user){
         return user.id === id;
     });
-    console.log(user);
+
+    if( !user){
+        return callback(`USUArio con id: ${id} no encontrado`);
+    }
+    return callback(null, user);
 }
+
+module.exports = {
+    getUserById,
+};
