@@ -7,9 +7,12 @@
     "start": "node src/app.js",
     "dev": "node --watch src/app.js"
   },
-  
   "keywords": [],
   "author": "Ulises Desentis",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "get-age": "^1.0.1",
+    "uuid": "^11.0.5"
+  }
 }
