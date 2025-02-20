@@ -1,5 +1,5 @@
-const httpClient = {
+const httpClientPlugin = {
 
 };
 
-module.exports = {httpClient};
+module.exports = {httpClientPlugin};
