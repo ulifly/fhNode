@@ -1,11 +1,11 @@
-const {getPokemonById, getPokemonByName} = require('./js-foundation/06-promises');
+const {getPokemon} = require('./js-foundation/06-promises');
+//const {getAge, getUUID} = require('./plugins');
 
-const info = getPokemonById(130)
+
+
+getPokemon(1)
 .then((pokemon) => console.log(pokemon.name))
-.catch((error) => console.log(error))
-.finally(() => console.log('Pokemon fetched'));
-
-const info2 = getPokemonByName('mewtwo')
-.then((pokemon) => console.log(pokemon.id))
 .catch((error) => console.log('Pokemon no encontrado'))
 .finally(() => console.log('Pokemon fetched'));
+
+
