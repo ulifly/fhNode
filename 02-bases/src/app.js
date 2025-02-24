@@ -5,7 +5,7 @@ const {getPokemon} = require('./js-foundation/06-promises');
 
 getPokemon(1)
 .then((pokemon) => console.log(pokemon.name))
-.catch((error) => console.log('Pokemon no encontrado'))
+.catch((error) => console.error('Pokemon no encontrado', error))
 .finally(() => console.log('Pokemon fetched'));
 
 
